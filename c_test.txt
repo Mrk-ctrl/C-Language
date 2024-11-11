@@ -1,0 +1,6 @@
+1. Write a program to find the minimum and maximum number of an array
+2. Write a program to make a 4x5 2D Matrix then take input from user then check if the number is in the array if it is count how many times it was repeated
+3. Write a program to sort an array
+4. Write a program to calculate the sum of all elements of array5
+5. Write a program to print all the prime and composite numbers of an array
+
