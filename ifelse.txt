@@ -1,0 +1,83 @@
+1. Any character is entered through the keyboard, write a 
+program to determine whether the character entered is a 
+capital letter, a small case letter, a digit or a special symbol. The  following  table  shows  the  range  of  ASCII  values  for  
+various characters. 
+ 
+Characters ASCII Values 
+A – Z - 65 – 90
+a – z - 97 – 122 
+0 – 9 - 48 – 57 
+special symbols 0 - 47, 58 - 64, 91 - 96, 123 - 127 
+
+2. A  certain  grade  of  steel  is  graded  according  to  the  following  
+conditions:  
+(i) Hardness must be greater than 50 
+(ii) Carbon content must be less than 0.7 
+(iii) Tensile strength must be greater than 5600  
+
+The grades are as follows: 
+Grade is 10 if all three conditions are met 
+Grade is 9 if conditions (i) and (ii) are met 
+Grade is 8 if conditions (ii) and (iii) are met 
+Grade is 7 if conditions (i) and (iii) are met 
+Grade is 6 if only one condition is met 
+Grade is 5 if none of the conditions are met  
+
+Write a program, which will require the user to give values of 
+hardness,  carbon  content  and  tensile  strength  of  the  steel  
+under consideration and output the grade of the steel.
+
+3. A library charges a fine for every book returned late. For first 
+5 days the fine is 50 paise, for 6-10 days fine is one rupee and 
+above 10 days fine is 5 rupees. If you return the book after 30 
+days  your  membership  will  be  cancelled.  Write  a  program  to  
+accept  the  number  of  days  the  member  is  late  to  return  the  
+book and display the fine or the appropriate message. 
+
+4. If the three sides of a triangle are entered through the 
+keyboard,  write  a  program  to  check  whether  the  triangle  is  
+isosceles, equilateral, scalene .
+
+5. The policy followed by a company to process customer orders 
+is given by the following rules: 
+(a)  If  a  customer  order  is  less  than  or  equal  to  that  in  stock  
+and has credit is OK, supply has requirement. 
+(b)  If has credit is not OK do not supply. Send him 
+intimation. 
+(c)  If  has  credit  is  Ok  but  the  item  in  stock  is  less  than  has  
+order,  supply  what  is  in  stock.  Intimate  to  him  data  the  
+balance will be shipped.  
+Write a C program to implement the company policy. 
+
+6. Create a program that asks the user to input their age and gender. If the 
+person is female and their age is between 18 and 25, display "You are eligible 
+for the women's scholarship." For males, display "You are not eligible for the 
+women's scholarship." For other age ranges, display "You are not eligible for 
+any scholarships."
+
+7. Write a C program to input marks of five subjects Physics, Chemistry, Biology, 
+Mathematics and Computer. Calculate percentage and grade according to 
+following: 
+Percentage >= 90% : Grade A 
+Percentage >= 80% : Grade B 
+Percentage >= 70% : Grade C 
+Percentage >= 60% : Grade D 
+Percentage >= 40% : Grade E 
+Percentage  < 40% : Grade F
+
+8. Write a C program to read temperature in centigrade and display a suitable 
+message according to the temperature state below: 
+Temp < 0 then Freezing weather 
+Temp 0-10 then Very Cold weather 
+Temp 10-20 then Cold weather 
+Temp 20-30 then Normal in Temp 
+Temp 30-40 then Its Hot 
+Temp >=40 then Its Very Hot 
+
+9. Write a program that asks the user to enter a year. Determine whether the
+year is a leap year or not. If it is a leap year, display "Leap year." Otherwise, 
+display "Not a leap year." (Leap years are divisible by 4, but not divisible by 
+100 unless they are also divisible by 400.)
+
+10. Write a C program to input any alphabet and check whether it is vowel or 
+consonant. 
