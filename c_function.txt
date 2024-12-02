@@ -1,0 +1,5 @@
+1. Write a program to check if a number is palindrome or not using function
+2. Write a program to take input of a number and count the number of digits in it using function
+3. Write a program to take input of a number and check if it is prime or composite
+4. Write a program to take input from user until the user wants and in the end print how many negative positive and zeros user entered
+5. Write a program to take input from user and calculate the sum if all the digits in it using function
