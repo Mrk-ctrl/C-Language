@@ -1,16 +1,32 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
 
-    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    int arr[] = {54, 6, 567, 324, 56789, 843, 234, 5456, 7, 689, 7632, 4356, 7857, 678976, 5234, 5678, 47362, 435, 6758};
+    int len = sizeof(arr) / sizeof(arr[0]);
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < len; i++)
     {
-        for (int j = 0; j < 3; j++)
+        int flag = 0;
+
+        for (int j = 2; j < arr[i]; j++)
         {
-            printf("%d ", arr[i][j]);
+            if (arr[i] % j == 0)
+            {
+                flag = 1;
+                break;
+            }
         }
-        printf("\n");
+
+        if (flag)
+        {
+            printf("%d is composite\n", arr[i]);
+        }
+        else
+        {
+            printf("%d is prime\n", arr[i]);
+        }
     }
 
     return 0;

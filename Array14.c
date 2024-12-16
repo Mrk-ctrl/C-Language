@@ -1,36 +1,48 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
 
-    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
-    int num, flag = 0;
-    printf("Enter any Number: ");
+    int arr[] = {45, 78, 7, 623, 4, 5, 879, 3, 24, 456, 768, 90, 983, 2, 4567, 8, 9, 8574, 362, 45, 6789, 876, 253, 456, 789, 765, 514, 567, 898, 8, 73243, 23, 56789};
+    int len = sizeof(arr) / sizeof(arr[0]);
+    int num, found = 0, flag = 0;
+    printf("Enter any number: ");
     scanf("%d", &num);
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < len; i++)
     {
-        for (int j = 0; j < 3; j++)
+        if (arr[i] == num)
         {
-            if (arr[i][j] == num)
-            {
-                flag = 1;
-                printf("%d is in the array\n", num);
-                for (int k = 1; k < 10; k++)
-                {
-                    printf("%d * %d = %d\n", num, k, num * k);
-                }
-                break;
-            }
-            
+            found = 1;
+            break;
         }
-        
     }
 
-    if (!flag)
+    if (found)
+    {
+        for (int i = 2; i < num; i++)
+        {
+            if (num % i == 0)
+            {
+                flag = 1;
+                break;
+            }
+        }
+        
+        if (flag)
+        {
+            printf("%d is in the array and is composite\n", num);
+        }
+        else
+        {
+            printf("%d is in the array and is prime\n", num);
+        }
+    
+    }
+    else
     {
         printf("%d is not in the array\n", num);
     }
-    
     
 
     return 0;
