@@ -1,0 +1,5 @@
+1. Write a program to sort an array in ascending order
+2. Write a program to make a pointer and take input of index from user if the index is present check if that number is prime or composite
+3. Write a program to make an array and choose a target number like int arr[] = {1, 2, 3, 6, 4 ,7, 8, 5} - target = 5 now find two such numbers whose sum equals the target number
+4. Write a program to take input of a index and a number and add that number in the array on given index
+
