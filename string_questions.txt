@@ -1,0 +1,4 @@
+1. Write a program to take input of a string and check if it is palindrome or not
+2. Write a program to take input of a string and count how many vowels and consonent in it
+3. Write a program to take input of a string and replace all the uppercase letters to lowercase and all lowercase to uppercase
+4. Write a program to copy a string in another string without using string functions
