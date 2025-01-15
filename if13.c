@@ -2,59 +2,22 @@
 
 int main(){
 
-    int Hardness, Tensile_strength, hh = 0, cc = 0, ts = 0 ;
-    float Carbon_content;
+    int a, b, c;
+    printf("Enter any three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
 
-    printf("Enter the Hardness: ");
-    scanf("%d", &Hardness);
-
-    printf("Enter the Carbon Content: ");
-    scanf("%f", &Carbon_content);
-
-    printf("Enter the Tensile Strength: ");
-    scanf("%d", &Tensile_strength);
-
-    if (Hardness > 50)
+    if (a > b && a > c)
     {
-        hh = 1;
+        printf("%d is greatest\n", a);
     }
-
-    if (Carbon_content < 0.7)
+    else if (b > a && b > c)
     {
-        cc = 1;
-    }
-    
-    if (Tensile_strength > 5600)
-    {
-        ts = 1;
-    }
-    
-    
-    if (hh == 1 && cc == 1 && ts == 1)
-    {
-        printf("Grade of Steel is 10\n");
-    }
-    else if (hh == 1 && cc == 1 && ts == 0)
-    {
-        printf("Grade of Steel is 9\n");
-    }
-    else if (hh == 0 && cc == 1 && ts == 1)
-    {
-        printf("Grade fof Steel is 8\n");
-    }
-    else if (hh == 1 && cc == 0 && ts == 1)
-    {
-        printf("Grade of Steel is 7\n");
-    }
-    else if (hh == 1 || cc == 1 || ts == 1)
-    {
-        printf("Grade of Steel is 6\n");
+        printf("%d is greatest\n", b);
     }
     else
     {
-        printf("Grade of Steel is 5\n");
+        printf("%d is greatest\n", c);
     }
     
-
     return 0;
 }
