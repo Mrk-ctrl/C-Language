@@ -2,35 +2,28 @@
 
 int main(){
 
-    int a, b, c;
-    printf("Enter any Nuber: ");
-    scanf("%d %d %d", &a, &b, &c);
+    int age;
+    char gender;
 
-    if (a > b)
+    printf("Enter Your age: ");
+    scanf("%d", &age);
+
+    printf("Enter Your gender[m/f]: ");
+    scanf(" %c", &gender);
+
+    if (gender == 'f' && age >= 18 && age <= 25)
     {
-        if (a > c)
-        {
-            printf("%d is greatest\n", a);
-        }
-        else
-        {
-            printf("%d is greatest\n", c);
-        }
-        
+        printf("You are eligible for women's scholarship\n");
     }
-
+    else if (gender == 'm')
+    {
+        printf("You are not eligible for women's scholarship\n");
+    }
     else
     {
-        if (b > c)
-        {
-            printf("%d is greatest\n", b);
-        }
-        else
-        {
-            printf("%d is greatest\n", c);
-        }
-        
+        printf("You are not eligible for any scholarship\n");
     }
     
+
     return 0;
 }

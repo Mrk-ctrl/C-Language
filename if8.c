@@ -2,29 +2,35 @@
 
 int main(){
 
-    int age;
-    char gender;
+    int temp;
+    printf("Enter the temprature: ");
+    scanf("%d", &temp);
 
-    printf("Enter your age: ");
-    scanf("%d", &age);
-
-    printf("Enter your gender: ");
-    scanf(" %c", &gender);
-
-    if (gender == 'f' && age >= 18 && age <= 25)
+    if (temp < 0)
     {
-        printf("You are eligible for Women's Scholarship\n");
+        printf("Freezing Weather\n");
     }
-    else if (gender == 'm')
+    else if (temp >= 0 && temp < 10)
     {
-        printf("You are not eligible for Women's Scholarship\n");
+        printf("Very Cold Weather\n");
+    }
+    else if (temp >= 10 && temp < 20)
+    {
+        printf("Cold Weather\n");
+    }
+    else if (temp >= 20 && temp < 30)
+    {
+        printf("Normal Weather\n");
+    }
+    else if (temp >= 30 && temp < 40)
+    {
+        printf("Hot Weather\n");
     }
     else
     {
-        printf("You are not eligible for any Scholarship\n");
+        printf("Very Hot Weather\n");
     }
-    
-    
+
 
     return 0;
 }
